@@ -1,0 +1,60 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+.wheelhouse/
+.installed.cfg
+*.egg-info/
+*.egg/
+
+# Virtual environment
+venv/
+ENV/
+env/
+.env/
+.env.*
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.sqlite3
+*.db
+/staticfiles/
+media/
+*/migrations/*
+!/migrations/__init__.py
+
+# Pytest
+.cache
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# VS Code settings
+.vscode/
+
+# IDE settings
+.idea/
+*.iml
+
+# Miscellaneous
+.DS_Store
+*.tgz
+*.rar
+*.zip
