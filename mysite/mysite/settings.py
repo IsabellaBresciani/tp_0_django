@@ -31,12 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    "polls.apps.PollsConfig",
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
 ]
 
 MIDDLEWARE = [
@@ -74,8 +75,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tp_0_django',  # Replace with your database name
+        'USER': 'root',        # Replace with your MySQL username
+        'PASSWORD': 'Italiano1506',    # Replace with your MySQL password
+        'HOST': 'localhost',             # Set to 'localhost' or your MySQL server IP
+        'PORT': '3306',                  # Default MySQL port
     }
 }
 
@@ -104,7 +109,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Argentina/Buenos_Aires'
+USE_TZ = True  # This is generally set to True to enable timezone support
 
 USE_I18N = True
 
